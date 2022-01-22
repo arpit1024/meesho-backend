@@ -2,6 +2,7 @@ const mongoose = require("mongoose");
 const express = require("express");
 const app = express();
 const { Schema, model } = require("mongoose");
+const PORT = process.env.PORT || 2345;
 
 const productSchema = new Schema(
   {
@@ -36,7 +37,7 @@ app.get("/getProducts/:id", async (req, res) => {
 app.get("/", async (req, res) => {
   return res.send("HELLO FROM SERVER");
 });
-app.listen(2345, async function () {
+app.listen(PORT, async function () {
   await mongoose
     .connect(
       "mongodb+srv://arpit321:test123@cluster0.epnav.mongodb.net/mydemoapp?retryWrites=true&w=majority",
