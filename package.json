@@ -1,0 +1,19 @@
+{
+  "name": "hosted-meesho-api",
+  "version": "1.0.0",
+  "description": "Products Api Hosted On Heroku",
+  "main": "db.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "engines": {
+    "node": "16.13.0"
+  },
+  "dependencies": {
+    "express": "^4.17.2",
+    "mongoose": "^6.1.7"
+  }
+}
